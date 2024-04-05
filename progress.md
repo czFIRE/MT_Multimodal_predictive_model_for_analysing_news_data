@@ -20,7 +20,7 @@ What's done:
     - [x] Concatenation
     - [x] Sum
     - [x] Product
-    ***
+    *** Would be nice to try:
     - [x] Attention
     - [x] Fusion
     - [x] Late fusion
