@@ -20,6 +20,11 @@ What's done:
     - [x] Concatenation
     - [x] Sum
     - [x] Product
+    - [x] Mean
+    - [x] Max pooling
+    - [x] Average pooling
+    - [x] gated (sigmoid nonlinearity and then element-wise multiplication - similar to transfering attention)
+    - [x] Bilinear pooling  (Efficient Large-Scale Multi-Modal Classification)
     *** Would be nice to try:
     - [x] Attention
     - [x] Fusion
