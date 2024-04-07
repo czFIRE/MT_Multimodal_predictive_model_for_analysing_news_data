@@ -165,6 +165,7 @@ images/*
 exported_articles.json
 failures.txt
 rows_to_remove.json
+unopeable_images.json
 text_embeddings_old.obj
 text_embeddings_roberta.obj
 text_embeddings.obj
