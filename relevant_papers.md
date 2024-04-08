@@ -14,6 +14,12 @@ https://link.springer.com/article/10.1007/s10489-020-01801-5   Transfer learning
 
 https://arxiv.org/abs/1903.06275    Show, Translate and Tell   ***
 
+********************************************************************* Really similar things:   
+
+https://arxiv.org/ftp/arxiv/papers/2304/2304.03897.pdf   Factify 2: A Multimodal Fake News and Satire News Dataset  => really similar dataset with a similar approach, but different use case
+
+https://aclanthology.org/2022.lrec-1.729/   N24News: A New Dataset for Multimodal News Classification  => Another approach for a really similar dataset
+
 *********************************************************************
 
 Models:
@@ -53,6 +59,10 @@ https://vaclavkosar.com/ml/Multimodal-Image-Text-Classification
 https://arxiv.org/abs/2301.02903   Transferring Pre-trained Multimodal Representations with Cross-modal Similarity Matching
 
 https://huggingface.co/blog/vision_language_pretraining    Reproducible scaling laws for contrastive language-image learning
+
+* https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10007548/    Effective Techniques for Multimodal Data Fusion: A Comparative Analysis
+
+* https://arxiv.org/abs/1802.02892    Efficient Large-Scale Multi-Modal Classification  => different fusion schemes - again, very similar
 
 ****
 
