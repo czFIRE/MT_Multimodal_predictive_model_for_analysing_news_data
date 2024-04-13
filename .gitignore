@@ -171,3 +171,4 @@ text_embeddings_roberta.obj
 text_embeddings.obj
 text_embeddings_gpu.obj
 df_combined.csv
+*.pt
