@@ -148,3 +148,35 @@ right_wing_outside_US       0.99      0.99      0.99     17499
             macro avg       0.97      0.97      0.97     41031
          weighted avg       0.98      0.98      0.98     41031
 ```
+
+5 epochs concat Roberta + Resnet
+```
+Accuracy: 0.9806731495698374
+Classification Report:
+                       precision    recall  f1-score   support
+
+      left_wing_in_US       0.93      0.98      0.96      3958
+ left_wing_outside_US       0.99      0.98      0.99     17133
+     right_wing_in_US       0.96      0.90      0.93      2441
+right_wing_outside_US       0.99      0.99      0.99     17499
+
+             accuracy                           0.98     41031
+            macro avg       0.97      0.96      0.96     41031
+         weighted avg       0.98      0.98      0.98     41031
+```
+
+5 epochs Roberta:
+```
+Accuracy: 0.9821598303721576
+Classification Report:
+                       precision    recall  f1-score   support
+
+      left_wing_in_US       0.94      0.98      0.96      3958
+ left_wing_outside_US       0.99      0.99      0.99     17133
+     right_wing_in_US       0.96      0.91      0.94      2441
+right_wing_outside_US       0.99      0.99      0.99     17499
+
+             accuracy                           0.98     41031
+            macro avg       0.97      0.97      0.97     41031
+         weighted avg       0.98      0.98      0.98     41031
+```

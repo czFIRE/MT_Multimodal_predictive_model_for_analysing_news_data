@@ -12,3 +12,7 @@ This thesis aims to create a predictive tool utilizing a multimodal machine-lear
 3. Download the images using the `image_scraper_parallel.py` script
 4. Run all the cells in the `exploratory_analysis.ipynb` notebook (this also does some preprocessing steps)
 5. Run the relevant cells in the `testing_models.ipynb` notebook
+
+## Troubleshooting
+
+If the training fails/kernel stops, it's probably a out of memory error. To remedy this, decrease the batch size parameter.

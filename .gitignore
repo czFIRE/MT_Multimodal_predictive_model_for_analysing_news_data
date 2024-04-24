@@ -161,6 +161,8 @@ cython_debug/
 
 
 images/*
+predictions/*
+trained_models/*
 
 exported_articles.json
 failures.txt
