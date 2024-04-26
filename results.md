@@ -17,13 +17,13 @@ right_wing_outside_US       0.99      0.99      0.99     17587
 
 5 epochs concat Bart-Large-CNN + ViT:
 ```
-Accuracy: 0.9896419780166216
+Accuracy: 0.9902025297945456
 Classification Report:
                        precision    recall  f1-score   support
 
-      left_wing_in_US       0.97      0.98      0.97      3958
+      left_wing_in_US       0.98      0.98      0.98      3958
  left_wing_outside_US       0.99      0.99      0.99     17133
-     right_wing_in_US       0.96      0.96      0.96      2441
+     right_wing_in_US       0.97      0.96      0.96      2441
 right_wing_outside_US       0.99      0.99      0.99     17499
 
              accuracy                           0.99     41031
