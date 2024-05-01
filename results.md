@@ -180,3 +180,121 @@ right_wing_outside_US       0.99      0.99      0.99     17499
             macro avg       0.97      0.97      0.97     41031
          weighted avg       0.98      0.98      0.98     41031
 ```
+
+Roberta + ConvNext mul texts
+```
+Accuracy: 0.9892276571372864
+Classification Report:
+                       precision    recall  f1-score   support
+
+      left_wing_in_US       0.96      0.98      0.97      3958
+ left_wing_outside_US       0.99      0.99      0.99     17133
+     right_wing_in_US       0.98      0.96      0.97      2441
+right_wing_outside_US       0.99      0.99      0.99     17499
+
+             accuracy                           0.99     41031
+            macro avg       0.98      0.98      0.98     41031
+         weighted avg       0.99      0.99      0.99     41031
+```
+
+
+BeIT + Roberta add texts
+```
+Accuracy: 0.9879359508664181
+Classification Report:
+                       precision    recall  f1-score   support
+
+      left_wing_in_US       0.97      0.98      0.97      3958
+ left_wing_outside_US       0.99      0.99      0.99     17133
+     right_wing_in_US       0.97      0.95      0.96      2441
+right_wing_outside_US       0.99      0.99      0.99     17499
+
+             accuracy                           0.99     41031
+            macro avg       0.98      0.98      0.98     41031
+         weighted avg       0.99      0.99      0.99     41031
+```
+
+BeIT + bart large cnn add texts
+
+```
+Accuracy: 0.9908118252053325
+Classification Report:
+                       precision    recall  f1-score   support
+
+      left_wing_in_US       0.98      0.98      0.98      3958
+ left_wing_outside_US       0.99      0.99      0.99     17133
+     right_wing_in_US       0.97      0.97      0.97      2441
+right_wing_outside_US       0.99      0.99      0.99     17499
+
+             accuracy                           0.99     41031
+            macro avg       0.98      0.98      0.98     41031
+         weighted avg       0.99      0.99      0.99     41031
+```
+
+BeIT + Bart large CNN mul texts
+```
+Accuracy: 0.9903975043259974
+Classification Report:
+                       precision    recall  f1-score   support
+
+      left_wing_in_US       0.98      0.98      0.98      3958
+ left_wing_outside_US       0.99      0.99      0.99     17133
+     right_wing_in_US       0.97      0.97      0.97      2441
+right_wing_outside_US       0.99      0.99      0.99     17499
+
+             accuracy                           0.99     41031
+            macro avg       0.98      0.98      0.98     41031
+         weighted avg       0.99      0.99      0.99     41031
+```
+
+
+BeIT + Bart large CNN mul titles:
+
+```
+Accuracy: 0.9577148984913846
+Classification Report:
+                       precision    recall  f1-score   support
+
+      left_wing_in_US       0.92      0.92      0.92      3958
+ left_wing_outside_US       0.97      0.97      0.97     17133
+     right_wing_in_US       0.89      0.88      0.89      2441
+right_wing_outside_US       0.96      0.97      0.97     17499
+
+             accuracy                           0.96     41031
+            macro avg       0.94      0.93      0.93     41031
+         weighted avg       0.96      0.96      0.96     41031
+
+```
+
+ViT + Bart-Large-CNN concat titles only:
+```
+Accuracy: 0.9498671736004485
+Classification Report:
+                       precision    recall  f1-score   support
+
+      left_wing_in_US       0.90      0.91      0.91      3958
+ left_wing_outside_US       0.96      0.96      0.96     17133
+     right_wing_in_US       0.88      0.84      0.86      2441
+right_wing_outside_US       0.96      0.96      0.96     17499
+
+             accuracy                           0.95     41031
+            macro avg       0.93      0.92      0.92     41031
+         weighted avg       0.95      0.95      0.95     41031
+```
+
+
+ViT + Bart-Large-CNN mul titles only:
+```
+Accuracy: 0.9500134044990373
+Classification Report:
+                       precision    recall  f1-score   support
+
+      left_wing_in_US       0.90      0.92      0.91      3958
+ left_wing_outside_US       0.96      0.96      0.96     17133
+     right_wing_in_US       0.88      0.83      0.86      2441
+right_wing_outside_US       0.96      0.96      0.96     17499
+
+             accuracy                           0.95     41031
+            macro avg       0.93      0.92      0.92     41031
+         weighted avg       0.95      0.95      0.95     41031
+```
