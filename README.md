@@ -1,4 +1,4 @@
-# MT_Multimodal_predictive_model_for_analysing_news_data
+# Multimodal predictive model for analysing news data
 Diploma thesis repository
 
 ## Oficial assignment

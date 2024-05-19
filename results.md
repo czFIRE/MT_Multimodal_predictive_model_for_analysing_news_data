@@ -15,74 +15,6 @@ right_wing_outside_US     0.9925    0.9926    0.9926     17499
          weighted avg     0.9879    0.9879    0.9879     41031
 ```
 
-REPEAT!!! 5 epochs concat Bart-Large-CNN + ViT: 
-```
-Accuracy: 0.9902025297945456
-Classification Report:
-                       precision    recall  f1-score   support
-
-      left_wing_in_US       0.98      0.98      0.98      3958
- left_wing_outside_US       0.99      0.99      0.99     17133
-     right_wing_in_US       0.97      0.96      0.96      2441
-right_wing_outside_US       0.99      0.99      0.99     17499
-
-             accuracy                           0.99     41031
-            macro avg       0.98      0.98      0.98     41031
-         weighted avg       0.99      0.99      0.99     41031
-```
-
-
-REPEAT!!! 5 epochs concat BGE-Reranker + ViT:
-```
-Accuracy: 0.9739709000511808
-Classification Report:
-                       precision    recall  f1-score   support
-
-      left_wing_in_US       0.93      0.95      0.94      3958
- left_wing_outside_US       0.98      0.98      0.98     17133
-     right_wing_in_US       0.91      0.89      0.90      2441
-right_wing_outside_US       0.98      0.98      0.98     17499
-
-             accuracy                           0.97     41031
-            macro avg       0.95      0.95      0.95     41031
-         weighted avg       0.97      0.97      0.97     41031
-```
-
-
-REPEAT!!! 5 epochs plus Bart-Large-CNN + ViT
-```
-Accuracy: 0.9897394652823475
-Classification Report:
-                       precision    recall  f1-score   support
-
-      left_wing_in_US       0.98      0.98      0.98      3958
- left_wing_outside_US       0.99      0.99      0.99     17133
-     right_wing_in_US       0.96      0.96      0.96      2441
-right_wing_outside_US       0.99      0.99      0.99     17499
-
-             accuracy                           0.99     41031
-            macro avg       0.98      0.98      0.98     41031
-         weighted avg       0.99      0.99      0.99     41031
-```
-
-
-REPEAT!!! 5 epochs mul Bart-Large-CNN + ViT
-```
-Accuracy: 0.9898125807316419
-Classification Report:
-                       precision    recall  f1-score   support
-
-      left_wing_in_US       0.97      0.98      0.98      3958
- left_wing_outside_US       0.99      0.99      0.99     17133
-     right_wing_in_US       0.97      0.96      0.96      2441
-right_wing_outside_US       0.99      0.99      0.99     17499
-
-             accuracy                           0.99     41031
-            macro avg       0.98      0.98      0.98     41031
-         weighted avg       0.99      0.99      0.99     41031
-```
-
-
 5 epochs mul  Reranker + ViT
 ```
 Accuracy: 0.952645560673637
@@ -663,4 +595,121 @@ right_wing_outside_US     0.9946    0.9939    0.9943     17499
              accuracy                         0.9912     41031
             macro avg     0.9848    0.9836    0.9842     41031
          weighted avg     0.9912    0.9912    0.9912     41031
+```
+
+reranker + vit + mul
+```
+./trained_models/bge-reranker-large_vit-base-patch16-224_mul.pt
+Accuracy: 0.9731422582925106
+Classification Report:
+                       precision    recall  f1-score   support
+
+      left_wing_in_US     0.9247    0.9500    0.9372      3958
+ left_wing_outside_US     0.9809    0.9825    0.9817     17133
+     right_wing_in_US     0.9231    0.8804    0.9012      2441
+right_wing_outside_US     0.9835    0.9822    0.9828     17499
+
+             accuracy                         0.9731     41031
+            macro avg     0.9531    0.9488    0.9507     41031
+         weighted avg     0.9731    0.9731    0.9731     41031
+```
+
+reranker + vit + concat
+```
+./trained_models/bge-reranker-large_vit-base-patch16-224_concat.pt
+Accuracy: 0.9723867319831347
+Classification Report:
+                       precision    recall  f1-score   support
+
+      left_wing_in_US     0.9196    0.9480    0.9336      3958
+ left_wing_outside_US     0.9823    0.9818    0.9821     17133
+     right_wing_in_US     0.9131    0.8652    0.8885      2441
+right_wing_outside_US     0.9828    0.9836    0.9832     17499
+
+             accuracy                         0.9724     41031
+            macro avg     0.9495    0.9447    0.9468     41031
+         weighted avg     0.9724    0.9724    0.9723     41031
+```
+
+roberta + vit + mul
+```
+./trained_models/roberta-base_vit-base-patch16-224_mul.pt
+Accuracy: 0.9865955009626868
+Classification Report:
+                       precision    recall  f1-score   support
+
+      left_wing_in_US     0.9563    0.9785    0.9673      3958
+ left_wing_outside_US     0.9920    0.9894    0.9907     17133
+     right_wing_in_US     0.9700    0.9394    0.9544      2441
+right_wing_outside_US     0.9906    0.9923    0.9914     17499
+
+             accuracy                         0.9866     41031
+            macro avg     0.9772    0.9749    0.9760     41031
+         weighted avg     0.9866    0.9866    0.9866     41031
+```
+
+bart + vit + concat
+```
+./trained_models/bart-large-cnn_vit-base-patch16-224_concat.pt
+Accuracy: 0.9909580561039214
+Classification Report:
+                       precision    recall  f1-score   support
+
+      left_wing_in_US     0.9769    0.9831    0.9800      3958
+ left_wing_outside_US     0.9928    0.9940    0.9934     17133
+     right_wing_in_US     0.9719    0.9631    0.9675      2441
+right_wing_outside_US     0.9950    0.9937    0.9943     17499
+
+             accuracy                         0.9910     41031
+            macro avg     0.9841    0.9835    0.9838     41031
+         weighted avg     0.9910    0.9910    0.9910     41031
+```
+
+reranker + vit + add
+```
+./trained_models/bge-reranker-large_vit-base-patch16-224_add.pt
+Accuracy: 0.9691209085813166
+Classification Report:
+                       precision    recall  f1-score   support
+
+      left_wing_in_US     0.9002    0.9439    0.9216      3958
+ left_wing_outside_US     0.9828    0.9788    0.9808     17133
+     right_wing_in_US     0.9118    0.8472    0.8783      2441
+right_wing_outside_US     0.9795    0.9824    0.9810     17499
+
+             accuracy                         0.9691     41031
+            macro avg     0.9436    0.9381    0.9404     41031
+         weighted avg     0.9692    0.9691    0.9690     41031
+```
+
+roberta beit concat
+```
+Accuracy: 0.9884477590114791
+Classification Report:
+                       precision    recall  f1-score   support
+
+      left_wing_in_US     0.9674    0.9813    0.9743      3958
+ left_wing_outside_US     0.9921    0.9910    0.9915     17133
+     right_wing_in_US     0.9700    0.9541    0.9620      2441
+right_wing_outside_US     0.9923    0.9923    0.9923     17499
+
+             accuracy                         0.9884     41031
+            macro avg     0.9804    0.9797    0.9800     41031
+         weighted avg     0.9885    0.9884    0.9884     41031
+```
+
+roberta vit concat
+```
+Accuracy: 0.9878628354171236
+Classification Report:
+                       precision    recall  f1-score   support
+
+      left_wing_in_US     0.9632    0.9783    0.9707      3958
+ left_wing_outside_US     0.9919    0.9911    0.9915     17133
+     right_wing_in_US     0.9661    0.9463    0.9561      2441
+right_wing_outside_US     0.9925    0.9926    0.9926     17499
+
+             accuracy                         0.9879     41031
+            macro avg     0.9784    0.9771    0.9777     41031
+         weighted avg     0.9879    0.9879    0.9879     41031
 ```
